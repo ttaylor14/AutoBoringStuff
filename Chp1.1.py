@@ -1,6 +1,7 @@
 # Introduction to Python
 
-# going through the basics taught in Chapter 1
+# Chapter 1  Python Basics
+# automatetheboringstuff.com/chapter1/
 
 
 ### Entering Expressions into the Interactive Shell
@@ -113,7 +114,7 @@ spam
 # 'Goodbye'
 
 
-'''
+"""
 Table 1-3 has examples of legal variable names. You can name a variable anything as 
 long as it obeys the following three rules:
 
@@ -151,10 +152,10 @@ the official Python code style, PEP 8, says that underscores should be used. I
 unapologetically prefer camelcase and point to “A Foolish Consistency Is the Hobgoblin of 
 Little Minds” in PEP 8 itself:
 
-“Consistency with the style guide is important. But most importantly: know when to be 
+'Consistency with the style guide is important. But most importantly: know when to be 
 inconsistent—sometimes the style guide just doesn’t apply. When in doubt, use your best 
-judgment.”
-'''
+judgment.'
+"""
 
 
 ### Your First Program
