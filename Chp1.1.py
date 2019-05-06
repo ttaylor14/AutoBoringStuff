@@ -287,12 +287,18 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year.')
 
 ### Q: 4. What is an expression made up of? What do all expressions do?
 
-#
+# Expressions consist of values (such as 2) and operators (such as +), and 
+# they can always evaluate (that is, reduce) down to a single value.
+
 
 ### Q: 5. This chapter introduced assignment statements, like spam = 10. 
 # # What is the difference between an expression and a statement?
 
-# 
+# You’ll store values in variables with an assignment statement.
+# An assignment statement consists of a variable name, an equal sign 
+# (called the assignment operator), and the value to be stored.
+
+# A statement value is stored in a variable. while an expression is done to an object.
 
 
 ### Q: 6. What does the variable bacon contain after the following code runs?
@@ -317,12 +323,40 @@ bacon + 1
 ### Q: 9. What three functions can be used to get the integer, 
 # floating-point number, or string version of a value?
 
+# str() int() float()
+
 
 ### Q: 10. Why does this expression cause an error? How can you fix it?
 
 # you can not add an integer to a string before converting it to a string
 
 ### Extra Credit: round() function
+
+
+# round(number[, ndigits])
+'''
+round() Parameters
+The round() method takes two parameters:
+
+number - number that is to be rounded
+ndigits (Optional) - number upto which the given number is to be rounded
+
+The round() method returns:
+
+(If ndigits not provided) nearest integer to the given number
+If two multiples are really close, rounding is done toward the even choice
+(If ndigits given) floating point number rounded off to the ndigits digits
+Always rounded to the closest multiple of 10 to the power minus ndigits
+'''
+
+round(7.7)
+round(7.2)
+round(4.334, 0)
+round(4.55, 0)
+round(4.6, 0)
+round(4.5, 0)
+
+round(4.556235, 3)
 
 
 
