@@ -367,3 +367,41 @@ print('Done')
 
 
 ### for Loops and the range() Function
+# what if you want to execute a block of code only a certain number of times? You can do 
+# this with a for loop statement and the range() function.
+
+
+# In code, a for statement looks something like for i in range(5): and always includes the 
+# following:
+
+# The for keyword
+# A variable name
+# The in keyword
+# A call to the range() method with up to three integers passed to it
+# A colon
+# Starting on the next line, an indented block of code (called the for clause)
+
+
+print('My name is')
+for i in range(5):
+    print('Jimmy Five Times (' + str(i) + ')')
+
+
+# Output:
+
+'''
+My name is
+Jimmy Five Times (0)
+Jimmy Five Times (1)
+Jimmy Five Times (2)
+Jimmy Five Times (3)
+Jimmy Five Times (4)
+'''
+
+
+
+
+
+
+
+
