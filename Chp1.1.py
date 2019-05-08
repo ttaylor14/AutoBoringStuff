@@ -4,7 +4,7 @@
 # automatetheboringstuff.com/chapter1/
 
 
-### Entering Expressions into the Interactive Shell
+# Entering Expressions into the Interactive Shell
 
 
 2 + 2
@@ -40,30 +40,26 @@
 # 3
 23 % 7
 # 2
-2     +            2
+2 + 2
 # 4
 (5 - 1) * ((7 + 1) / (3 - 1))
 # 16.0
 
-# 5 + 
+# 5 +
 # # this will result in an error because 5 has not been added to anything
 
-# 42 + 5 + * 2 
+# 42 + 5 + * 2
 # # This will result in an error because two operations are given in a row
 
 
+# The Integer, Floating-Point, and String Data Types
 
-
-### The Integer, Floating-Point, and String Data Types
-
-#'Hello world!
+# 'Hello world!
 # Error: SyntaxError: EOL while scanning string literal
 # Forgot a ' or "
 
 
-
-
-### String Concatenation and Replication
+# String Concatenation and Replication
 
 
 'Alice' + 'Bob'
@@ -71,7 +67,6 @@
 
 # 'Alice' + 42
 # This will result in an error because you can not add unlike data types
-
 
 
 'Alice' * 5
@@ -83,7 +78,7 @@
 # These expressions make no sense to python
 
 
-### Storing Values in Variables
+# Storing Values in Variables
 
 spam = 40
 spam
@@ -115,7 +110,7 @@ spam
 
 
 '''
-Table 1-3 has examples of legal variable names. You can name a variable anything as 
+Table 1-3 has examples of legal variable names. You can name a variable anything as
 long as it obeys the following three rules:
 
 It can be only one word.
@@ -142,24 +137,24 @@ total_$um (special characters like $ are not allowed)
 hello (special characters like single quotes are not allowed)
 
 
-Variable names are case-sensitive, meaning that spam, SPAM, Spam, and sPaM are four 
-different variables. It is a Python convention to start your variables with a lowercase 
+Variable names are case-sensitive, meaning that spam, SPAM, Spam, and sPaM are four
+different variables. It is a Python convention to start your variables with a lowercase
 letter.
 
-This book uses camelcase for variable names instead of underscores; that is, variables 
-lookLikeThis instead of looking_like_this. Some experienced programmers may point out that 
-the official Python code style, PEP 8, says that underscores should be used. I 
-unapologetically prefer camelcase and point to -A Foolish Consistency Is the Hobgoblin of 
+This book uses camelcase for variable names instead of underscores; that is, variables
+lookLikeThis instead of looking_like_this. Some experienced programmers may point out that
+the official Python code style, PEP 8, says that underscores should be used. I
+unapologetically prefer camelcase and point to -A Foolish Consistency Is the Hobgoblin of
 Little Minds- in PEP 8 itself:
 
--Consistency with the style guide is important. But most importantly: know when to be 
-inconsistent - sometimes the style guide just does not apply. When in doubt, use your best 
+-Consistency with the style guide is important. But most importantly: know when to be
+inconsistent - sometimes the style guide just does not apply. When in doubt, use your best
 judgment. -
 
 '''
 
 
-### Your First Program
+# Your First Program
 
 # This program says hello and asks for my name.
 
@@ -174,7 +169,7 @@ myAge = input()
 print('You will be ' + str(int(myAge) + 1) + ' in a year.')
 
 """""
-Output: 
+Output:
 Hello world!
 What is your name?
 Al
@@ -186,18 +181,18 @@ What is your age?
 You will be 5 in a year.
 """
 
-## Len() function
+# Len() function
 
 len('hello')
-#5
+# 5
 
 len('My very energetic monster just scarfed nachos.')
-#46
+# 46
 
 len('')
-#0
+# 0
 
-### The str(), int(), and float() Functions
+# The str(), int(), and float() Functions
 
 str(29)
 # '29'
@@ -206,7 +201,7 @@ print('I am ' + str(29) + ' years old.')
 # I am 29 years old.
 
 str(0)
-#'0'
+# '0'
 
 str(-3.14)
 # '-3.14'
@@ -234,7 +229,7 @@ spam = input()
 # enter: 101
 
 spam
-#'101'
+# '101'
 
 spam = int(spam)
 spam
@@ -254,7 +249,7 @@ int(7.7)
 int(7.7) + 1
 # 8
 
-print('What is your age?') # ask for their age
+print('What is your age?')  # ask for their age
 myAge = input()
 print('You will be ' + str(int(myAge) + 1) + ' in a year.')
 
@@ -269,48 +264,48 @@ print('You will be ' + str(int(myAge) + 1) + ' in a year.')
 # True
 
 
-### Practice Questions
+# Practice Questions
 
 
-### Q:1. Which of the following are operators, and which are values?
+# Q:1. Which of the following are operators, and which are values?
 
 # Operators: * - / +
 # Values: 'hello' 88.8 5
 
 
-### Q: 2. Which of the following is a variable, and which is a string?
+# Q: 2. Which of the following is a variable, and which is a string?
 
 # Variable: spam
 # String: 'spam'
 
-### Q: 3. Name three data types.
+# Q: 3. Name three data types.
 
 # Integer, String, Float
 
-### Q: 4. What is an expression made up of? What do all expressions do?
+# Q: 4. What is an expression made up of? What do all expressions do?
 
-# Expressions consist of values (such as 2) and operators (such as +), and 
+# Expressions consist of values (such as 2) and operators (such as +), and
 # they can always evaluate (that is, reduce) down to a single value.
 
 
-### Q: 5. This chapter introduced assignment statements, like spam = 10. 
+# Q: 5. This chapter introduced assignment statements, like spam = 10.
 # # What is the difference between an expression and a statement?
 
 # You all store values in variables with an assignment statement.
-# An assignment statement consists of a variable name, an equal sign 
+# An assignment statement consists of a variable name, an equal sign
 # (called the assignment operator), and the value to be stored.
 
 # A statement value is stored in a variable. while an expression is done to an object.
 
 
-### Q: 6. What does the variable bacon contain after the following code runs?
+# Q: 6. What does the variable bacon contain after the following code runs?
 
 bacon = 20
 bacon + 1
 
 # bacon = 21
 
-### Q: 7. What should the following two expressions evaluate to?
+# Q: 7. What should the following two expressions evaluate to?
 
 'spam' + 'spamspam'
 # 'spamspamspam'
@@ -318,21 +313,21 @@ bacon + 1
 'spam' * 3
 # 'spamspamspam'
 
-### Q: 8. Why is eggs a valid variable name while 100 is invalid?
+# Q: 8. Why is eggs a valid variable name while 100 is invalid?
 
 # 100 begins with a number, eggs does not
 
-### Q: 9. What three functions can be used to get the integer, 
+# Q: 9. What three functions can be used to get the integer,
 # floating-point number, or string version of a value?
 
 # str() int() float()
 
 
-### Q: 10. Why does this expression cause an error? How can you fix it?
+# Q: 10. Why does this expression cause an error? How can you fix it?
 
 # you can not add an integer to a string before converting it to a string
 
-### Extra Credit: round() function
+# Extra Credit: round() function
 
 
 # round(number[, ndigits])
@@ -359,6 +354,3 @@ round(4.6, 0)
 round(4.5, 0)
 
 round(4.556235, 3)
-
-
-
