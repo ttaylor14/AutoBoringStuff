@@ -3,7 +3,7 @@
 # Chapter 2  Flow Control
 # automatetheboringstuff.com/chapter2/
 
-### Boolean Values
+# Boolean Values
 
 spam = True
 spam
@@ -13,8 +13,7 @@ spam
 # true = 2 + 2 # You can not assign to keyword
 
 
-
-### Comparison Operators
+# Comparison Operators
 
 '''
 Operator
@@ -36,7 +35,7 @@ Greater than
 Less than or equal to
 Greater than or equal to
 
-These operators evaluate to True or False depending on the values you give them. 
+These operators evaluate to True or False depending on the values you give them.
 Let’s try some operators now, starting with == and !=.
 
 '''
@@ -90,7 +89,7 @@ myAge = 29
 myAge >= 10
 # True
 
-### Boolean Operators
+# Boolean Operators
 
 # three Boolean operators (and, or, and not) are used to compare Boolean values.
 
@@ -126,12 +125,12 @@ not not not not not True
 # order of operations. Star on left go to right...
 
 
-### Elements of Flow Control
+# Elements of Flow Control
 
 # Conditions
-# The Boolean expressions you’ve seen so far could all be considered conditions, 
-# which are the same thing as expressions; condition is just a more specific name in 
-# the context of flow control statements. Conditions always evaluate down to a Boolean 
+# The Boolean expressions you’ve seen so far could all be considered conditions,
+# which are the same thing as expressions; condition is just a more specific name in
+# the context of flow control statements. Conditions always evaluate down to a Boolean
 # value, True or False.
 
 name = 'Mary'
@@ -171,9 +170,9 @@ else:
 
 
 # elif Statement
-# elif statement is an “else if” statement that always 
-# follows an if or another elif statement. For when you may have a case where you want one 
-# of many possible clauses to execute. 
+# elif statement is an “else if” statement that always
+# follows an if or another elif statement. For when you may have a case where you want one
+# of many possible clauses to execute.
 
 # The elif keyword
 # A condition (that is, an expression that evaluates to True or False)
@@ -216,7 +215,7 @@ elif age > 2000:
     print('Unlike you, Alice is not an undead, immortal vampire.')
 
 
-# Optionally, you can have an else statement after the last elif statement. In that case, 
+# Optionally, you can have an else statement after the last elif statement. In that case,
 # it is guaranteed that at least one (and only one) of the clauses will be executed.
 
 name = 'Bob'
@@ -229,10 +228,9 @@ else:
     print('You are neither Alice nor a little kid.')
 
 
-
 # Loop Statement
-# You can make a block of code execute over and over again with a while statement. 
-# The code in a while clause will be executed as long as the while statement’s condition 
+# You can make a block of code execute over and over again with a while statement.
+# The code in a while clause will be executed as long as the while statement’s condition
 # is True.
 
 # The while keyword
@@ -241,7 +239,7 @@ else:
 # Starting on the next line, an indented block of code (called the while clause)
 
 
-# But at the end of a while clause, the program execution jumps back to the start of the while 
+# But at the end of a while clause, the program execution jumps back to the start of the while
 # statement. The while clause is often called the while loop or just the loop.
 
 spam = 0
@@ -284,8 +282,8 @@ Thank you!
 
 
 # Break Statement
-# There is a shortcut to getting the program execution to break out of a 
-# while loop’s clause early. If the execution reaches a break statement, it immediately 
+# There is a shortcut to getting the program execution to break out of a
+# while loop’s clause early. If the execution reaches a break statement, it immediately
 # exits the while loop’s clause. In code, a break statement simply contains the break keyword.
 
 
@@ -298,57 +296,55 @@ print('Thank you!')                 # (5)
 
 
 # Continue Statement
-# When the program execution reaches a continue statement, the program execution immediately 
+# When the program execution reaches a continue statement, the program execution immediately
 # jumps back to the start of the loop
 
 
 # Trapped in an Infinite Loop?
 
-# If you ever run a program that has a bug causing it to get stuck in an 
-# infinite loop, press CTRL-C. This will send a KeyboardInterrupt error to your program 
-# and cause it to stop immediately. To try it, create a simple infinite loop in the file 
+# If you ever run a program that has a bug causing it to get stuck in an
+# infinite loop, press CTRL-C. This will send a KeyboardInterrupt error to your program
+# and cause it to stop immediately. To try it, create a simple infinite loop in the file
 # editor, and save it as infiniteloop.py.
 
 
 while True:
     print('Hello world!')
 
-# When you run this program, it will print Hello world! to the screen forever, because 
-# the while statement’s condition is always True. In IDLE’s interactive shell window, 
-# there are only two ways to stop this program: press CTRL-C or select Shell ▸ restart 
-# Shell from the menu. CTRL-C is handy if you ever want to terminate your program 
+# When you run this program, it will print Hello world! to the screen forever, because
+# the while statement’s condition is always True. In IDLE’s interactive shell window,
+# there are only two ways to stop this program: press CTRL-C or select Shell ▸ restart
+# Shell from the menu. CTRL-C is handy if you ever want to terminate your program
 # immediately, even if it’s not stuck in an infinite loop.
 
 
-
 while True:
-      print('Who are you?')
-  name = input()
-  if name != 'Joe':       #(1)
-    continue              #(2)
-  print('Hello, Joe. What is the password? (It is a fish.)') 
-  password = input()      #(3)
-  if password == 'swordfish':
-    break                 #(4)
-print('Access granted.')  #(5)
-
+    print('Who are you?')
+    name = input()
+    if name != 'Joe':  # (1)
+        continue  # (2)
+        print('Hello, Joe. What is the password? (It is a fish.)')
+        password = input()  # (3)
+    if password == 'swordfish':
+        break  # (4)
+print('Access granted.')  # (5)
 
 
 # “Truthy” and “Falsey” Values
 
-# There are some values in other data types that conditions will consider equivalent to 
+# There are some values in other data types that conditions will consider equivalent to
 # True and False. When used in conditions, 0, 0.0, and '' (the empty string) are considered
-# False, while all other values are considered True. 
+# False, while all other values are considered True.
 
 
 name = ''
-while not name: #(1)
+while not name:  # (1)
     print('Enter your name:')
     name = input()
 print('How many guests will you have?')
 numOfGuests = int(input())
-if numOfGuests: #(2)
-    print('Be sure to have enough room for all your guests.') #(3)
+if numOfGuests:  # (2)
+    print('Be sure to have enough room for all your guests.')  # (3)
 print('Done')
 
 # Example Output:
@@ -365,13 +361,13 @@ print('Done')
 '''
 
 
+# for Loops and the range() Function
 
-### for Loops and the range() Function
-# what if you want to execute a block of code only a certain number of times? You can do 
+# what if you want to execute a block of code only a certain number of times? You can do
 # this with a for loop statement and the range() function.
 
 
-# In code, a for statement looks something like for i in range(5): and always includes the 
+# In code, a for statement looks something like for i in range(5): and always includes the
 # following:
 
 # The for keyword
@@ -398,10 +394,124 @@ Jimmy Five Times (3)
 Jimmy Five Times (4)
 '''
 
+# An Equivalent while Loop
+
+# You can actually use a while loop to do the same thing as
+# for loop; for loops are just more concise.
+
+print('My name is')
+i = 0
+while i < 5:
+    print('Jimmy Five Times (' + str(i) + ')')
+    i = i + 1
 
 
+# The Starting, Stopping, and Stepping Arguments to range()
+
+# Some functions can be called with multiple arguments separated by a comma, and
+# range() is one of them. This lets you change the integer passed to range() to
+# follow any sequence of integers, including starting at a number other than zero.
 
 
+for i in range(12, 16):
+    print(i)
+
+# The range() function can also be called with three arguments. The first two
+# arguments will be the start and stop values, and the third will be the step argument.
+# The step is the amount that the variable is increased by after each iteration.
+
+for i in range(0, 10, 2):
+    print(i)
+
+#  you can even use a negative number for the step argument to make the for loop count down instead of up.
+
+for i in range(5, -1, -1):
+    print(i)
 
 
+# Importing Modules
 
+# Each module is a Python program that contains a related group of functions that can be embedded in your programs.
+
+
+# The import keyword
+# The name of the module
+# Optionally, more module names, as long as they are separated by commas
+
+import random
+for i in range(5):
+    print(random.randint(1, 10))
+
+# The random.randint() function call evaluates to a random integer value between the two integers that you pass it.
+
+
+# Ending a Program Early with sys.exit()
+
+# The last flow control concept to cover is how to terminate the program. This always happens if the program execution
+# reaches the bottom of the instructions. However, you can cause the program to terminate, or exit, by calling the sys.exit() function.
+
+import sys
+
+while True:
+    print('Type exit to exit.')
+    response = input()
+    if response == 'exit':
+        sys.exit()
+    print('You typed ' + response + '.')
+
+# This program has an infinite loop with no break statement inside. The only way this program will end is if the user enters exit, causing sys.exit() to be called.
+
+# Practice Questions
+
+# Q: 1. What are the two values of the Boolean data type? How do you write them?
+
+# Q: 2. What are the three Boolean operators?
+
+# Q: 3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+
+# Q: 4. What do the following expressions evaluate to?
+
+
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+# Q: 5. What are the six comparison operators?
+
+# Q: 6. What is the difference between the equal to operator and the assignment operator?
+
+# Q: 7. Explain what a condition is and where you would use one.
+
+# Q: 8. Identify the three blocks in this code:
+
+
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+
+# Q: 9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+# Greetings! if anything else is stored in spam.
+
+# Q: 10. What can you press if your program is stuck in an infinite loop?
+
+# Q: 11. What is the difference between break and continue?
+
+# Q: 12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+
+# Q: 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program
+# that prints the numbers 1 to 10 using a while loop.
+
+# Q: 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+
+# Extra credit: Look up the round() and abs() functions on the Internet, and find out what they do. Experiment with
+# them in the interactive shell.
