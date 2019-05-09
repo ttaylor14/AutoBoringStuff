@@ -36,7 +36,7 @@ Less than or equal to
 Greater than or equal to
 
 These operators evaluate to True or False depending on the values you give them.
-Let’s try some operators now, starting with == and !=.
+Lets try some operators now, starting with == and !=.
 
 '''
 
@@ -128,7 +128,7 @@ not not not not not True
 # Elements of Flow Control
 
 # Conditions
-# The Boolean expressions you’ve seen so far could all be considered conditions,
+# The Boolean expressions you have seen so far could all be considered conditions,
 # which are the same thing as expressions; condition is just a more specific name in
 # the context of flow control statements. Conditions always evaluate down to a Boolean
 # value, True or False.
@@ -144,7 +144,7 @@ if name == 'Mary':
 
 
 # If Statments
-# “If this condition is true, execute the code in the clause.”
+# If this condition is true, execute the code in the clause.
 
 # The if keyword
 # A condition (that is, an expression that evaluates to True or False)
@@ -155,7 +155,7 @@ if name == 'Alice':
     print('Hi, Alice.')
 
 # Else Statment
-# “If this condition is true, execute this code. Or else, execute that code.”
+# If this condition is true, execute this code. Or else, execute that code.
 
 # The else keyword
 # A colon
@@ -170,7 +170,7 @@ else:
 
 
 # elif Statement
-# elif statement is an “else if” statement that always
+# elif statement is an else if statement that always
 # follows an if or another elif statement. For when you may have a case where you want one
 # of many possible clauses to execute.
 
@@ -230,7 +230,7 @@ else:
 
 # Loop Statement
 # You can make a block of code execute over and over again with a while statement.
-# The code in a while clause will be executed as long as the while statement’s condition
+# The code in a while clause will be executed as long as the while statements condition
 # is True.
 
 # The while keyword
@@ -283,8 +283,8 @@ Thank you!
 
 # Break Statement
 # There is a shortcut to getting the program execution to break out of a
-# while loop’s clause early. If the execution reaches a break statement, it immediately
-# exits the while loop’s clause. In code, a break statement simply contains the break keyword.
+# while loops clause early. If the execution reaches a break statement, it immediately
+# exits the while loops clause. In code, a break statement simply contains the break keyword.
 
 
 while True:                         # (1)
@@ -312,10 +312,10 @@ while True:
     print('Hello world!')
 
 # When you run this program, it will print Hello world! to the screen forever, because
-# the while statement’s condition is always True. In IDLE’s interactive shell window,
-# there are only two ways to stop this program: press CTRL-C or select Shell ▸ restart
+# the while statements condition is always True. In IDLEs interactive shell window,
+# there are only two ways to stop this program: press CTRL-C or select Shell - restart
 # Shell from the menu. CTRL-C is handy if you ever want to terminate your program
-# immediately, even if it’s not stuck in an infinite loop.
+# immediately, even if its not stuck in an infinite loop.
 
 
 while True:
@@ -330,10 +330,10 @@ while True:
 print('Access granted.')  # (5)
 
 
-# “Truthy” and “Falsey” Values
+# Truthy and Falsey Values
 
 # There are some values in other data types that conditions will consider equivalent to
-# True and False. When used in conditions, 0, 0.0, and '' (the empty string) are considered
+# True and False. When used in conditions, 0, 0.0, and (the empty string) are considered
 # False, while all other values are considered True.
 
 

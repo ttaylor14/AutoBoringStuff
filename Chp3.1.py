@@ -70,12 +70,12 @@ print(fortune)
 
 # The None Value
 
-# In Python there is a value called None, which represents the absence of a .
+# In Python there is a value called None, which represents the absence of a
 # None is the only value of the NoneType data type.
 # (Other programming languages might call this value null, nil, or undefined.)
 # Just like the Boolean True and False values, None must be typed with a capital N.
 
-# This value-without-a-value can be helpful when you need to store something that won’t
+# This value without a value can be helpful when you need to store something that wont
 # be confused for a real value in a variable.
 
 # all function calls need to evaluate to a return value, print() returns None
